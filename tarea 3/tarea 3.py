@@ -14,10 +14,11 @@ class Array():
   def get_lenght(self):
         print(len(self.__data))
 
-  def set_item(dato, index):
-        return dato.__data[index]
+  def set_item(self, indice, dato):
+        self.__dato = dato
+        self.__data.insert(indice, dato)
 
-  def clear(dato):
+  def clear(self, dato):
       dato.__data == dato
 
 
@@ -25,4 +26,5 @@ ejemplo = Array(5)
 ejemplo.to_string()
 ejemplo.get_item(3)
 ejemplo.get_lenght()
-ejemplo.set_item(5)
+ejemplo.set_item(4,5)
+ejemplo.to_string()
