@@ -19,7 +19,7 @@ class Array():
         self.__data.insert(indice, dato)
 
   def clear(self, dato):
-      dato.__data == dato
+      dato.__array = [dato for x in range(self.__tamano)]
 
 
 ejemplo = Array(5)
